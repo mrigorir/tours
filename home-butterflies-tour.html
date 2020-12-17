@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Butterflies Tour</title>
+
+     <!-- Styles --> 
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FAV icon --> 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+    <!-- META Content --> 
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+    <body>
+          <!-- Navigation -->
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-nav pb-0">
+                <a class="navbar-brand ml-2" href="#"> 
+                    <img src="assets/img/logo/logo-menu.png" alt="logo-img" class="img-fluid" width="250" height="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto mr-10">
+                    <li class="nav-item active py-md-4 mr-md-5 fs-22">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown tours py-md-4 mr-md-5 fs-22" id="tour" style="position: relative;">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" 
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Tours
+                      </a>
+                      <div class="dropdown-menu border-0 bg-nav tours" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="birds-tours.html">Birds Tours</a>
+                        <a class="dropdown-item text-white" href="orchids-tours.html">Orchids Tours</a>
+                        <a class="dropdown-item text-white" href="butterflies-tours.html">Butterflies Tours</a>
+                        <a class="dropdown-item text-white" href="senderism-tours.html">Senderism Tours</a>
+                      </div>
+                    </li>
+                    <!-- <li class="nav-item mr-md-5 py-md-4 fs-22">
+                      <a class="nav-link" href="team.html">Team</a>
+                    </li> -->
+                    <li class="nav-item mr-md-5 py-md-4 fs-22">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mr-8 py-md-4 fs-22">
+                        <a class="nav-link" href="#">Book</a>
+                      </li>
+                      <li class="nav-item dropdown flags mr-md-5 py-md-4 fs-22" id="flag">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" 
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <img src="assets/img/home/flags/uk.png" alt=""> 
+                         <i class="fa fa-angle-down" id="lang"></i>
+                        </a>
+                        <div class="dropdown-menu flags bg-nav border-0" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item text-white" href="#">
+                            <img src="assets/img/home/flags/colombia.png" alt="">
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item text-white" href="#">
+                            <img src="assets/img/home/flags/uk.png" alt="">
+                          </a>
+                        </div>
+                      </li>
+                      <li class="nav-item py-md-4 fs-22 not-hover">
+                        <a class="nav-link" href="#">
+                          <img src="assets/img/home/shopping-bag.png" alt="">
+                        </a>
+                      </li>
+                </ul>
+                </div>
+              </nav>
+
+               <!-- /Navigation --> 
+
+                <!-- Header -->
+
+             <div class="bg-image bg-header-home">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="card border-0 header-form-card">
+                    <div class="card-header bg-t px-5">
+                      <h2 class="header-form-title">
+                        Describe your perfect trip
+                      </h2>
+                      <div class="card-body">
+                        <form action="" role="form" class="">
+                          <div class="form-group">
+                            <label for="" class="header-form-label">
+                              Trip type
+                            </label>
+                            <select name="" id="" class="form-control form-control-lg">
+                              <option value="" selected>
+                                All
+                              </option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="" class="header-form-label">
+                              Price
+                            </label>
+                            <select name="" id="" class="form-control">
+                              <option value="" selected>
+                                --
+                              </option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="" class="header-form-label">
+                              Type duration
+                            </label>
+                            <select name="" id="" class="form-control">
+                              <option value="" selected>
+                                All
+                              </option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-light btn-block header-form-button">
+                              SEARCH
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 q-bg-gray">
+                  <div class="">
+                    <h1 class="header-title">
+                      COLOMBIA
+                    </h1>
+                    <p class="header-text">
+                      Tropical paradise
+                    </p>
+                    <img src="assets/img/home/scroll.png" alt="" class="float-right header-arrow">
+                  </div>
+                </div>
+              </div>
+             </div>
+
+              <!-- /Header -->
+
+              <!-- Main -->
+
+             <div class="main">
+
+               <!-- Searcher -->
+
+             <div class="row middle-form">
+                <div class="col-md-12">
+                  <h1 class="text-center middle-title">
+                    Find the best tour for you
+                  </h1>
+                </div>
+             </div>
+             <div class="row mb-5">
+               <div class="col-md-12 mt-5">
+                  <form action="" role="form" class="mx-auto" style="width:70%;">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control middle-input" placeholder="Type here...">
+                      <div class="input-group-append">
+                        <button class="btn btn-search px-4" type="submit">Search</button>
+                      </div>
+                    </div>
+                  </form>
+               </div>
+             </div>
+
+              <!-- /Searcher -->
+
+               <!-- Team -->
+
+             <div class="row team-container d-flex align-items-center">
+               <div class="col-md-6 logo-team">
+                 <img src="assets/img/home/team.png" alt="" class="img-fluid">
+               </div>
+               <div class="col-md-6">
+                 <h1 class="team-title">
+                   Wellbeing Tours
+                  </h1>
+                  <p class="team-subtitle">
+                    Colombia
+                  </p>
+                  <p class="team-text">  
+                    The human factor for us, is the most important thing
+                  </p>
+                  <p class="team-subtext">
+                    Our team is made of an inerdisiplinary group of excellent quality,
+                    professionals with extensive training, magnificent experience and 
+                    recognized experience.
+                  </p>
+                  <a href="#">
+                    <button class="btn float-right team-button p-3 px-4">
+                      Our Team
+                    </button>
+                  </a>
+               </div>
+             </div> 
+
+             <!-- /Team -->
+
+             <!-- Video -->
+
+             <div class="row">
+               <div class="col-md-12 b-image-loro">
+                <a href="#" style="text-decoration:none;">
+                  <h1 class="text-white text-center video-text py-4 d-flex align-items-center justify-content-center">
+                    <img src="assets/video/img-play/play.png" alt="" class="mr-2"> 
+                    Sounds of Colombia
+                 </h1>
+                </a>
+               </div>
+             </div>
+             
+             <!-- /Video -->
+
+             <!--Tours-section -->
+
+             <div class="row tours-section">
+                <div class="col-md-6">
+                  <h1 class="birds-title">Colombia,</h1>
+                  <p class="birds-text">Butterflies Tours</p>
+                </div>  
+                <div class="col-md-6">
+                  <div class="d-flex align-items-center justify-content-around mr-5 bird-imgs">
+                    <a href="index.html">
+                      <img src="assets/img/birds/loro.png" alt="" class="img-fluid loro-select">
+                    </a>
+                    <a href="home-orchids-tour.html">
+                      <img src="assets/img/orchids/orchid.png" alt="" class="img-fluid orchid-select">
+                    </a>
+                    <a href="home-butterflies-tour.html">
+                      <img src="assets/img/butterflies/butterfly-active.png" alt="" class="img-fluid butterfly-select">
+                    </a>
+                    <a href="home-mountains-tour.html">
+                      <img src="assets/img/mountains/mountain.png" alt="" class="img-fluid mountain-select">
+                    </a>
+                  </div>
+                 </div> 
+             </div>
+             <div class="row tours-section">
+               <div class="col-md-4">
+                <div class="card shadow bird-card">
+                  <div class="card-img">
+                    <a href="huila.html">
+                      <img src="assets/img/butterflies/huila.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="bird-card-title">
+                        COLORED BUTTERFLIES: HUILA AND PUTUMAYO
+                     </h3>
+                    <p class="bird-card-text">
+                        next departure SEPTEMBER 01, 2020
+                     </p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center justify-content-between flex-wrap mt-3 border-top-0 mb-4 ml-3 mr-3">
+                    <div class="stars puntuaciones">
+                   
+                    </div>
+                    <div>
+                      <a href="#">
+                        <button class="btn bird-card-button">
+                           US$ 4,110.00
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <div class="col-md-4">
+                <div class="card shadow bird-card">
+                  <div class="card-img">
+                   <a href="amazonic.html">
+                    <img src="assets/img/butterflies/amazonic.png" alt="" class="img-fluid">
+                   </a>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="bird-card-title">
+                     Tour Mariposas: Amazonic Adventure
+                     </h3>
+                    <p class="bird-card-text">
+                      next departure September 15, 2020
+                     </p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center justify-content-between flex-wrap mt-3 border-top-0 mb-4 ml-3 mr-3">
+                    <div class="stars puntuaciones">
+                    
+                    </div>
+                    <div>
+                      <a href="#">
+                        <button class="btn bird-card-button">
+                          US$ 4,080.00
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </div>
+             </div> 
+             <div class="row">
+               <div class="col-md-12 text-center">
+                <a href="butterflies-tours.html">
+                  <button class="btn btn-see-all"> 
+                    SEE ALL 
+                  </button>
+                </a>
+               </div>
+             </div>
+
+             <!-- /Tours-section -->
+
+             <!-- Our-Partners -->
+
+               <!-- <div class="row">
+               <div class="col-md-12">
+                 <h1 class="partners-title">OUR PARTNERS</h1>
+               </div>
+               <div class="col-md-12">
+                <p class="partners-text">WHO JOIN US</p>
+              </div>
+             </div>
+             <div class="row">
+             <div class="container-fluid">
+              <div class="d-flex align-items-center justify-content-center flex-wrap">
+                <img src="assets/img/partners/proColombia.png" alt="" class="partners-imgs">
+                <img src="assets/img/partners/uni.png" alt="" class="partners-imgs">
+                <img src="assets/img/partners/fontur.png" alt="" class="partners-imgs">
+                <img src="assets/img/partners/corpochivor.png" alt="" class="partners-imgs">
+                <img src="assets/img/partners/rnt.png" alt="" class="partners-imgs">
+              </div> 
+             </div> 
+             </div>   -->
+
+            <!-- /Our-Partners -->
+             </div>  
+
+             <!-- /Main -->
+
+             <!-- Contact -->
+
+             <div class="bg-contact mt-10">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="contact-title mb-4">
+                     Contact Us
+                  </h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="contact-text">If your are intrested in learing more about our plans, dates and offers, please 
+                    contact us below and our team will answer your questions as soon as possible.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="contact-text">NOTE: We desing private and personalized tours according to your needs and interests
+                    throughout the year and throughout Colombia.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <form action="" role="form" class="mt-5 contact-form">
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <div class="form-group pt-3 pr-5 pb-3 pl-0">
+                          <input type="text" class="form-control form-control-lg" placeholder="full name" required>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-12">
+                        <div class="form-group pt-3 pr-5 pb-3 pl-0">
+                          <input type="text" class="form-control form-control-lg" placeholder="country or region" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <div class="form-group pt-3 pr-5 pb-3 pl-0">
+                          <input type="text" class="form-control form-control-lg" placeholder="full name" required>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-12">
+                        <div class="form-group pt-3 pr-5 pb-3 pl-0">
+                          <input type="email" class="form-control form-control-lg" placeholder="email" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12 ">
+                        <div class="form-group pt-3 pr-5 pb-3 pl-0">
+                          <textarea name="" id="" cols="30" rows="5" placeholder="aditional information" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-12">
+                        <div class="form-group pt-3 pr-5 pb-3 pl-0">
+                         <button type="submit" class="btn float-right contact-button">send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+             </div>
+
+              <!-- /Contact -->
+
+               <!-- Social links -->
+
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="d-flex align-items-center justify-content-center flex-wrap p-5 links-section">
+                   <p class="links-text pt-3 mr-5">Follow Us!</p>
+                  <div class="links-container">
+                   <a href="#">
+                    <img src="assets/img/social-links/facebook.png"  alt=""   class="mr-4">
+                   </a>
+                    <a href="#">
+                      <img src="assets/img/social-links/twitter.png"   alt=""   class="mr-4">
+                    </a>
+                    <a href="#">
+                      <img src="assets/img/social-links/instagram.png" alt=""   class="mr-4">
+                    </a>
+                    <a href="#">
+                      <img src="assets/img/social-links/youtube.png"   alt=""   class="mr-4">
+                    </a>
+                    <a href="#">
+                      <img src="assets/img/social-links/pinterest.png" alt=""   class="mr-4">
+                    </a>
+                    <a href="#">
+                      <img src="assets/img/social-links/whatsapp.png"  alt=""   class="mr-4">
+                    </a>
+                    <a href="#">
+                      <img src="assets/img/social-links/telegram.png"  alt=""   class="mr-4">
+                    </a>
+                  </div>
+                 </div>
+               </div>
+             </div>
+
+             <!-- /Social links -->
+
+              <!-- Footer -->
+            
+              <div class="container-fluid">
+                <div class="row footer-section">
+                  <div class="col-md-4 d-flex align-items-center justify-content-center footer-logo">
+                    <img src="assets/img/footer/logo-footer.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-4 d-flex align-items-center justify-content-center footer-middle-section">
+                    <div class="mb-6">
+                      <p class="footer-home">
+                        <a class="footer-link" href="index.html"><strong>Home</strong></a>
+                      </p>
+                      <p>
+                        <a class="footer-link mb-5" href="#"><strong>Tours</strong></a>
+                      </p>
+                      <ul>
+                        <a href="birds-tours.html" class="footer-list-link">
+                          <li>
+                            Birds Tour
+                          </li>
+                        </a>
+                        <a href="orchids-tours.html" class="footer-list-link">
+                          <li>
+                            Orchids Tour
+                          </li>
+                        </a>
+                        <a href="butterflies-tours.html" class="footer-list-link">
+                          <li>
+                            Butterflies Tour
+                          </li>
+                        </a>
+                        <a href="senderism-tours.html" class="footer-list-link">
+                          <li>
+                            Snederism Tour
+                          </li>
+                        </a>
+                      </ul>
+                    <!--  <p>
+                        <a class="footer-link" href="team.html"><strong>Team</strong></a>
+                      </p> -->    
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <div class="mb-6">
+                    <p class="footer-home">
+                      <a class="footer-link" href="contact.html"><strong>Contact</strong></a>
+                    </p>
+                    <p class="footer-info">
+                    <strong>Call Us: </strong>
+                    </p>
+                    <p class="footer-info">
+                      57-1-4612882
+                    </p>
+                    <p class="footer-info">
+                      <strong>Attention hours:</strong>
+                    </p>
+                    <p class="footer-info">
+                      Lunes a Viernes, de 9 a.m a 5 p.m 
+                    </p>
+                    <p class="footer-info">
+                      <strong>Address: </strong>
+                    </p>
+                    <p class="footer-info">
+                     86 A street No.24-47, Bogotá
+                    </p> 
+                    <p class="footer-info">
+                      <strong>Email: </strong>
+                    </p>
+                    <p class="footer-info">
+                     <a href="mailto:info@wellbeing.tours">info@wellbeing.tours</a>
+                    </p>     
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="container-fluid">
+                <div class="col-md-12 text-center text-white footer-copyright p-2">
+                  Copyright &copy; 2020 Wellbeing Tours Colombia. All Rights Reserved.Privacy Policy | Terms  
+                </div>
+              </div>
+            </div> 
+  
+            <!-- /Footer -->
+
+<!-- Scripts -->
+
+<script src="assets/js/jquery-3.2.1.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/bootstrap.bundle.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/valoraciones/dist/valoraciones.js"></script>
+<script>
+  $(function() {$('div.puntuaciones').valoraciones({star_tot:5, star_max:25, evento:'hover', star_size:2});});
+</script>
+
+    </body>
+</html>

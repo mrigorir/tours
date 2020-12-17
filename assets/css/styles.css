@@ -1,0 +1,1815 @@
+
+/******* FONTS *********/
+
+@font-face {
+    font-family: 'b-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'b-light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/css/fonts/brandon/b-light.otf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+} 
+
+@font-face {
+    font-family: 'b-italic';
+    font-style: italic;
+    font-weight: 400;
+    src: url('assets/css/fonts/brandon/b-regularItalic.otf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'b-bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('assets/css/fonts/brandon/b-bold.otf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+} 
+
+@font-face {
+    font-family: 'f-regular';
+    font-style: normal;
+    src: url('assets/css/fonts/felixiti/Felixti.TTF');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+/******* /FONTS *********/
+
+
+
+/******* BASE *********/
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --dark-green: #114436;
+    --middle-gray: #A1AAAE;
+    --light-gray: #EDEFF1;
+    --dark-gray: #75838C;
+    --light-black: #424A4E;
+    --red: #CE1D22;
+    --blue: #044896;
+    --cream: #f0c799;
+    --yellow: #FAD21D;
+    --overlay: rgba(0,0,0, 0.4);
+    --q-bg-gray:#d3d9d3;
+    --bg-buy-button:#5c5148;
+}
+
+li {
+    list-style: none;
+} 
+
+a:hover {
+    text-decoration:none;
+}  
+
+a.dropdown-item.active {
+    background-color: transparent;
+    color:var(--cream)!important;
+}
+
+html {
+    padding:0!important;
+    margin:0!important;
+}
+
+.ml-45 {
+    margin-left:45px;
+}
+
+.ml-6 {
+    margin-left:60px;
+}
+
+.ml-7 {
+    margin-left:70px;
+}
+.ml-8 {
+    margin-left:80px;
+}
+
+.ml-9 {
+    margin-left:90px;
+}
+
+.ml-10 {
+    margin-left:100px;
+}
+
+.ml-15 {
+    margin-left:150px;
+} 
+
+.ml-20 {
+    margin-left:200px;
+}
+
+.mr-6 {
+    margin-right:60px;
+}
+
+.mr-7 {
+    margin-right:70px;
+}
+.mr-8 {
+    margin-right:80px;
+}
+
+.mr-9 {
+    margin-right:90px;
+}
+
+.mr-10 {
+    margin-right:100px;
+}
+
+.mr-15 {
+    margin-right:150px;
+} 
+
+.mr-20 {
+    margin-right:200px;
+}
+
+.mb-6 {
+    margin-bottom:60px;
+}
+
+.mb-7 {
+    margin-bottom:70px;
+}
+
+.mb-8 {
+    margin-bottom:80px;
+}
+
+.mb-9 {
+    margin-bottom:90px;
+}
+
+.mb-10 {
+    margin-bottom:100px;
+}
+
+.mt-10 {
+    margin-top:100px;
+}
+
+
+.fs-20 {
+    font-size:20px;
+}
+
+.fs-21 {
+    font-size:21px;
+}
+
+.fs-22 {
+    font-size:22px;
+}
+
+.fs-23 {
+    font-size:23px;
+}
+
+.fs-24 {
+    font-size:24px;
+}
+
+.fs-25 {
+    font-size:25px;
+}  
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("assets/css/back-images/select-arrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    
+} 
+
+.navbar {
+    font-family: 'b-light';
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:#edeff1!important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .active>.nav-link { 
+    color:var(--cream)!important;
+    font-weight: bold;
+}
+
+i.fa-angle-up:hover, i.fa-angle-down {
+    color:var(--white);
+}
+
+.bg-nav {
+    background-color:var(--dark-green);
+} 
+
+.shadow {
+    box-shadow: 1px 3px 10px var(--light-gray);
+}
+
+
+/******* /BASE *********/
+
+
+
+/******* HEADER-NAV *********/
+
+
+.main {
+    margin-left:4%;
+    margin-right: 4%;
+}
+
+li.nav-item a.nav-link{
+    border-bottom: 3px solid transparent;
+} 
+
+li.nav-item:hover:not(.dropdown):not(.not-hover){
+    border-bottom: 5px solid var(--cream);
+}
+
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: var(--cream)!important;
+} 
+.dropdown-menu.flags {
+    min-width: 5.5rem!important;
+} 
+
+a.dropdown-item img {
+    margin-left:-10px!important;
+
+}
+
+
+.dropdown-menu.tours{
+    position: absolute;
+    left:-43px;
+    top:90px;
+}
+ 
+.bg-header-home {
+    background-image: url("assets/css/back-images/group-150.png");
+    height:700px;
+} 
+
+.bg-image {
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bg-t {
+    background-color:rgba(250, 250, 250, .2);
+
+} 
+
+.header-form-title {
+    font-size:25pt;
+}
+
+.header-form-title, .header-form-label {
+    font-family: 'b-bold';
+    color:var(--white);
+}
+
+.header-form-label {
+    font-size:16pt;
+} 
+
+
+select.form-control:not([size]):not([multiple]) {
+    font-family: 'b-regular';
+    font-size:12pt;
+    color:var(--light-black);
+}
+
+select.form-control:not([size]):not([multiple]), .header-form-button {
+    color:var(--light-black);
+    height: 60px;
+    width: 90%;
+}
+
+.header-form-card {
+    background:transparent; 
+    width:60%; 
+    margin-left:120px;
+}
+ 
+.header-form-button {
+    font-family:'b-bold';
+    font-weight: bold;
+    margin-top:50px;
+    letter-spacing: 1px;
+} 
+
+.header-title {
+    color:var(--white);
+    font-family: 'f-regular';
+    font-size:65pt;
+    font-weight: bold;
+    text-align: right;
+    margin-right:100px;
+    margin-top:250px;
+} 
+
+.header-text {
+    color:var(--white);
+    font-family:'b-regular';
+    font-size:30pt;
+    text-align:right;
+    text-transform: uppercase;
+    margin-right:100px;
+} 
+
+.header-arrow {
+    margin-right:100px;
+    margin-top:50px;
+}
+
+
+/******* / HEADER-NAV *********/ 
+
+
+/******* HOME-SEARCHER *********/
+
+
+.middle-title {
+    font-family:'b-bold';
+    font-size:35pt;
+    color:var(--dark-green);
+    margin-top:100px;
+}
+
+.middle-input, .middle-input::placeholder {
+    color:#75838C!important;
+    font-family: 'b-regular';
+}
+
+.btn-search {
+    background-color: var(--dark-green);
+    color:var(--white);
+    font-family: 'b-bold';
+    font-size:20pt;
+    height: 60px;
+}  
+
+
+/******* /HOME-SEARCHER *********/
+
+
+/******* HOME-OUR TEAM *********/
+
+
+.team-container {
+    margin: 150px auto;
+} 
+
+.logo-team {
+    background-image: url("assets/css/back-images/logo-team.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.team-title {
+    font-size:55pt;
+}
+
+.team-subtitle {
+    font-size:35pt;
+    margin-bottom:50px;
+}
+
+.team-title, .team-subtitle {
+    color:var(--dark-green);
+    font-family:'f-regular';
+}
+
+.team-title, .team-subtitle, .team-text {
+    text-transform: uppercase;
+}
+
+.team-text, .team-subtext {
+    font-family: 'b-regular';
+    color:var(--dark-gray);
+    font-size:16pt;   
+} 
+
+.team-subtext {
+    width:80%;
+} 
+
+.team-button {
+    text-transform: uppercase;
+    color:var(--dark-green);
+    font-family:'b-bold';
+    font-size:20pt;
+    margin-top:100px;
+    background-color: var(--white);
+    border: solid 1px var(--dark-green);
+    margin-right:140px;
+} 
+
+.team-button:hover {
+    background-color: var(--dark-green);
+    color:var(--white);
+} 
+
+
+/******* /HOME-OUR TEAM *********/
+
+
+/******* HOME-VÍDEO *********/
+
+
+.b-image-loro {
+    background-image: url("assets/css/back-images/loro.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.video-text {
+    font-family:'b-bold';
+    font-size:30pt;
+} 
+
+
+/******* /HOME-VÍDEO *********/
+
+
+/******* BIRDS-SECTION *********/
+
+
+
+.tours-section {
+    margin-top:150px;
+}
+
+.birds-title {
+    font-size:65pt;
+    color:var(--dark-green);
+} 
+
+.birds-title, .birds-text {
+    margin-left:50px;
+}
+
+.birds-title, .birds-text, .bird-card-title, .bird-card-text, .bird-card-button, .btn-see-all {
+    font-family:'b-bold';
+    text-transform: uppercase;
+}
+
+.birds-text {
+    color:var(--middle-gray);
+    font-size:40pt;
+} 
+
+.bird-card-title, .bird-card-text {
+    text-align: center;
+} 
+
+.bird-card-title {
+    color:var(--dark-gray);
+}
+
+.bird-card-text {
+    color:var(--blue);
+    font-size:16pt;
+    margin-top:40px;
+} 
+.bird-card-button {
+    background-color:var(--dark-green);
+    color:var(--white);
+    font-size:20pt;
+    padding:15px 30px;
+}
+
+.btn-see-all {
+    color:var(--red);
+    background-color: var(--white);
+    border: solid 1px var(--red);
+    padding: 15px 50px;
+    font-size:20pt;
+    margin-top:150px;
+} 
+
+.btn-see-all:hover {
+    color:var(--white);
+    background-color:var(--red);
+}
+
+/******* /BIRDS-SECTION *********/ 
+
+
+/******* OUR PARTNERS *********/ 
+
+.partners-title {
+    color:var(--dark-green);
+    font-size:65pt;
+    margin-top:100px;
+} 
+
+.partners-text {
+    color:var(--middle-gray);
+    font-size:35pt; 
+    margin-bottom:60px;
+} 
+
+.partners-text, .partners-text {
+    font-family: 'b-bold';
+} 
+
+.partners-imgs {
+    width:300px;
+}
+
+/******* /OUR PARTNERS *********/
+
+
+/******* CONTACT *********/
+
+.bg-contact {
+    background-image: url("assets/css/back-images/contact.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contact-title {
+    font-size:65pt;
+    text-transform: uppercase;
+}
+
+.contact-text {
+    font-size:18pt;
+    width: 60%;
+} 
+
+.contact-form input {
+    height:60px;
+} 
+
+.contact-form input, .contact-form textarea, .contact-form input:focus {
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color:var(--white);
+}
+
+.contact-button {
+    background-color:transparent;
+    border: solid 1px var(--white);
+    padding:20px 60px;
+    margin-top:60px;
+    font-size:20pt;
+}
+
+.contact-button:hover {
+    color:#000;
+    background-color: var(--white);
+}
+
+.contact-button, .contact-form input::placeholder, .contact-form textarea::placeholder, .contact-title, .contact-text, .contact-form input:focus {
+    color:var(--white);
+} 
+
+.contact-button, .contact-form input::placeholder, .contact-form textarea::placeholder,.contact-title {
+    text-transform: uppercase;
+    font-family: 'b-bold';
+}
+
+
+
+/******* /CONTACT *********/
+
+
+
+/******* HOME-SOCIAL-LINKS *********/
+
+.links-section {
+    background-color: var(--cream);
+    margin-top:150px;
+}
+
+.links-text {
+    font-size:25pt;
+    font-family: 'b-bold';
+    text-transform: uppercase;
+    color:var(--black);
+}
+
+/******* / HOME-SOCIAL-LINKS *********/
+
+
+
+/******* FOOTER *********/
+
+
+.footer-section {
+    background-color:var(--dark-green);
+}
+
+.footer-link, .footer-list-link, .footer-info, .footer-info a {
+    color: var(--white);
+    font-size:20pt;
+}
+
+.footer-info a:hover {
+    color:var(--cream);
+}
+
+.footer-link {
+    font-family: 'b-bold';
+} 
+
+.footer-list-link {
+    line-height:200%;
+}
+
+.footer-info, .footer-list-link, .footer-copyright {
+    font-family: 'b-light';
+}
+
+.footer-list-link:hover, .footer-link:hover {
+    color: var(--cream);
+} 
+
+.footer-home {
+    margin-bottom:30px;
+    margin-top:70px;
+} 
+
+.footer-copyright {
+    background-color:var(--dark-green);
+    font-size:14pt;
+}
+
+/******* /FOOTER *********/ 
+
+
+
+/******* TEAM *********/ 
+
+.bg-header-team {
+    background-image: url("assets/css/back-images/team.png");
+    height:900px;
+    position: relative;
+} 
+
+.bg-header-team::before, 
+.bg-header-condor-tour::before, 
+.bg-header-santa-maria-tour::before, 
+.bg-header-ecosystem-tour::before,
+.bg-header-guacharaca-tour::before,
+.bg-header-del-paramo-tour::before,
+.bg-header-aguila-tour::before,
+.bg-header-paujil-tour::before,
+.bg-header-sabana-tour::before,
+.bg-header-antioquia-tour::before,
+.bg-header-colombia-tour::before,
+.bg-header-amazonic-tour::before,
+.bg-header-mountains-tour::before {
+    content: '';
+    position: absolute;
+    top:0px;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:var(--overlay);   
+} 
+
+#header-title-team, #header-title-text {
+    color:var(--white);
+    font-family:'b-bold';
+    text-transform: uppercase;
+    margin-right:87px;
+} 
+
+#header-title-team {
+    font-size:150px;
+    margin-top:220px;
+}
+
+#header-title-text {
+    font-size:80px;
+}  
+
+.team-middle-title {
+    font-size:60px;
+    color:var(--dark-green);
+    font-family:'b-bold';
+    margin-top: 150px;
+    margin-bottom:50px;
+} 
+
+.team-middle-text {
+    font-size:20px;
+    color:var(--dark-gray);
+    font-family:'b-regular';
+}
+
+.team-card-title {
+    color:var(--dark-green);
+    font-size:35px;
+    font-family: 'b-bold';
+}
+
+.team-card-text {
+    color:var(--dark-gray);
+    font-size:20px;
+    font-family: 'b-regular';
+} 
+
+.team-card {
+    margin-top:150px;
+}
+
+/******* /TEAM *********/ 
+
+
+
+/******* BIRDS-TOURS *********/
+
+
+.tours-title {
+    font-family: 'f-regular';
+    font-size:65pt;
+    font-weight: bold;
+    margin-right:100px;
+    margin-top:250px;
+} 
+
+.tours-title, .tours-text {
+    text-transform: uppercase;
+}
+
+.tours-text {
+    font-family:'b-regular';
+    font-size:30pt;
+    margin-right:100px;
+} 
+
+.tours-text, .tours-title, .tours-subtext {
+    color:var(--white);
+    text-align:left;
+} 
+.tours-arrow {
+    margin-right:100px;
+    margin-top:50px;
+} 
+
+.tours-text-container {
+    margin-left:100px;
+}
+
+.bg-header-birds-tour {
+    background-image: url("assets/css/back-images/indigo.png");
+    height: 900px;
+}
+
+#indigo-section {
+    margin-top:450px!important;
+} 
+
+.note-section {
+    margin-top:150px;
+    margin-bottom: 150px;   
+} 
+
+.note-section-text {
+    color:var(--middle-gray);
+    font-family: 'b-regular';
+    font-size: 22px;
+    width: 65%;
+}
+
+/******* /BIRDS-TOURS *********/
+
+
+
+/******* ORCHIDS-TOURS *********/
+
+.bg-header-orchids-tour {
+    background-image: url("assets/css/back-images/orchid.png");
+    height: 900px;
+}
+
+/******* /ORCHIDS-TOURS *********/
+
+
+/******* BUTTERFLIES-TOURS *********/
+
+.bg-header-butterflies-tour {
+    background-image: url("assets/css/back-images/butterflie.png");
+    height: 900px;
+}
+
+/******* /BUTTERFLIES-TOURS *********/
+
+
+/******* MOUNTAIN-TOURS *********/
+
+.bg-header-senderims-tour {
+    background-image: url("assets/css/back-images/mountain.png");
+    height: 900px;
+}
+
+/******* /MOUNTAIN-TOURS *********/
+
+
+/******* CONDOR-DESCRIPTION *********/
+
+
+.bg-header-condor-tour {
+    background-image: url("assets/css/back-images/condor.png");
+    height:900px;
+    position: relative;
+} 
+
+.tours-subtext {
+    font-family: 'b-light';
+    font-size:15px;
+    font-style: italic;
+} 
+
+.tours-buy-button {
+    margin-top:10px;
+    font-family: 'b-light';
+    font-weight: bold;
+    font-size:18px;
+    color:var(--white);
+    background-color:transparent;
+    border: solid 1px white;
+    padding:15px 30px;
+    outline-color: transparent;
+}
+
+.tours.buy-button:hover {
+    color:var(--bg-buy-button);
+    background-color: var(--white);
+}
+
+#header-condor-title {
+    margin-top:180px;
+}
+
+.desc-main-title {
+    color:var(--dark-green);
+    font-family: 'b-bold';
+    font-size: 50px;
+} 
+
+.desc-section {
+    margin-top:500px;   
+}
+
+.desc-text {
+    color:var(--dark-gray);
+    line-height: 200%;
+    font-family: 'b-regular';
+    font-size:25px;
+} 
+
+.desc-icon-title {
+    color:var(--dark-green);
+    font-family: 'b-bold';
+    font-size:25px;
+}
+
+.desc-icon-text {
+    color:var(--dark-gray);
+    font-family: 'b-regular';
+    font-size:20px;
+}
+
+.desc-activity-section {
+    margin:50px auto;
+} 
+
+.intineraries-line {
+    border-bottom:solid 1px var(--dark-gray);
+}
+
+.intineraries-title {
+    color:var(--dark-green);
+    font-family:'b-bold';
+}
+
+.intineraries-figure {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+} 
+
+.figure {
+    top:-7px;
+    left:7px;
+}
+
+.intineraries-title, .intineraries-figure {
+    font-size:25px;
+}
+
+
+.buy-button-container {
+    margin: 200px auto;
+}
+
+.buy-button {
+    font-family: 'b-bold';
+    font-size:25px;
+    background-color:transparent;
+    outline-color: transparent;
+    text-transform: uppercase;
+    margin-right: 100px;
+    margin-bottom: 50px;
+} 
+
+.buy-button-red {
+    color:var(--red);
+    border: solid 1px var(--red);
+    padding:20px 65px;
+   
+}
+
+.buy-button-red:hover {
+    color:var(--white);
+    background-color: var(--red);
+} 
+
+.buy-button-green {
+    color:var(--dark-green);
+    border: solid 1px var(--dark-green);
+    padding:20px 35px;
+}
+
+.buy-button-green:hover {
+    color:var(--white);
+    background-color: var(--dark-green);
+}
+
+/******* /CONDOR-DESCRIPTION *********/
+
+
+
+/******* PERICO-DESCRIPTION *********/
+
+.bg-header-perico-tour {
+    background-image: url("assets/css/back-images/perico.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /PERICO-DESCRIPTION *********/
+
+
+
+/******* ALONDRA-DESCRIPTION *********/
+
+.bg-header-alondra-tour {
+    background-image: url("assets/css/back-images/alondra.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /ALONDRA-DESCRIPTION *********/
+
+
+
+/******* PICULET-DESCRIPTION *********/
+
+.bg-header-piculet-tour {
+    background-image: url("assets/css/back-images/piculet.png");
+    height:1100px;
+    position: relative;
+} 
+
+.desc-piculet-section {
+    margin-top:750px;
+}
+
+/******* /PICULET-DESCRIPTION *********/
+
+
+
+/******* SANTA-MARÍA-DESCRIPTION *********/
+
+.bg-header-santa-maria-tour {
+    background-image: url("assets/css/back-images/santa-maria.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /SANTA-MARÍA-DESCRIPTION *********/
+
+
+/******* CHAMICERO-DESCRIPTION *********/
+
+.bg-header-chamicero-tour {
+    background-image: url("assets/css/back-images/chamicero.png");
+    height:1200px;
+    position: relative;
+} 
+
+.desc-chamicero-section {
+    margin-top:850px;
+}
+
+/******* /CHAMICERO-DESCRIPTION *********/
+
+
+
+/******* ECOSYSTEM-DESCRIPTION *********/
+
+.bg-header-ecosystem-tour {
+    background-image: url("assets/css/back-images/ecosystem.png");
+    height:900px;
+    position: relative;
+} 
+
+.desc-ecosystem-section {
+    margin-top:550px;
+}
+
+/******* /ECOSYSTEM-DESCRIPTION *********/
+
+
+
+/******* GUACHARACA-DESCRIPTION *********/
+
+.bg-header-guacharaca-tour {
+    background-image: url("assets/css/back-images/guacharaca.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /GUACHARACA-DESCRIPTION *********/
+
+
+
+/******* DEL-PARAMO-DESCRIPTION *********/
+
+.bg-header-del-paramo-tour {
+    background-image: url("assets/css/back-images/del-paramo.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /GDEL-PARAMO-DESCRIPTION *********/
+
+
+
+/******* AGUILA-DESCRIPTION *********/
+
+.bg-header-aguila-tour {
+    background-image: url("assets/css/back-images/aguila.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /GAGUILA-DESCRIPTION *********/
+
+
+
+/*******PAUJIL-DESCRIPTION *********/
+
+.bg-header-paujil-tour {
+    background-image: url("assets/css/back-images/paujil.png");
+    height:1200px;
+    position: relative;
+} 
+
+.desc-paujil-section {
+    margin-top:800px;
+}
+
+/******* /PAUJIL-DESCRIPTION *********/
+
+
+
+/*******TINGUA-DESCRIPTION *********/
+
+.bg-header-tingua-tour {
+    background-image: url("assets/css/back-images/tingua.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /TINGUA-DESCRIPTION *********/
+
+
+/*******SABANA-DESCRIPTION *********/
+
+.bg-header-sabana-tour {
+    background-image: url("assets/css/back-images/sabana.png");
+    height:1100px;
+    position: relative;
+} 
+
+.desc-sabana-section {
+    margin-top:750px;
+}
+
+/******* /SABANA-DESCRIPTION *********/
+
+
+
+/*******ORQUIDEA-DESCRIPTION *********/
+
+.bg-header-orquidea-tour {
+    background-image: url("assets/css/back-images/orquidea-1.png");
+    height:900px;
+    position: relative;
+} 
+
+.desc-orquidea-section {
+    margin-top:750px;
+}
+
+/******* /ORQUIDEA-DESCRIPTION *********/
+
+
+
+/*******CATTLEYA-DESCRIPTION *********/
+
+.bg-header-cattleya-tour {
+    background-image: url("assets/css/back-images/cattleya.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /CATTLEYA-DESCRIPTION *********/
+
+
+
+/*******BELLA ANTIOQUIA-DESCRIPTION *********/
+
+.bg-header-antioquia-tour {
+    background-image: url("assets/css/back-images/antioquia.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /BELLA ANTIOQUIA-DESCRIPTION *********/
+
+
+
+/*******COLOMBIA-ORCHID-DESCRIPTION *********/
+
+.bg-header-colombia-tour {
+    background-image: url("assets/css/back-images/colombia.png");
+    height:900px;
+    position: relative;
+} 
+
+/******* /COLOMBIA-ORCHID-DESCRIPTION *********/
+
+
+
+/*******HUILA-DESCRIPTION *********/
+
+.bg-header-huila-tour {
+    background-image: url("assets/css/back-images/huila.png");
+    height:1100px;
+    position: relative;
+}  
+
+.desc-huila-section {
+    margin-top:750px;
+}
+
+/******* /HUILA-DESCRIPTION *********/
+
+
+/*******AMAZONIC-DESCRIPTION *********/
+
+.bg-header-amazonic-tour {
+    background-image: url("assets/css/back-images/amazonic.png");
+    height:900px;
+    position: relative;
+}  
+
+/******* /AMAZONIC-DESCRIPTION *********/
+
+
+
+/*******SENDERISM-DESCRIPTION *********/
+
+.bg-header-mountains-tour {
+    background-image: url("assets/css/back-images/mounains.png");
+    height:900px;
+    position: relative;
+}  
+
+/******* /SENDERISM-DESCRIPTION *********/
+
+
+
+
+
+
+/******* QUERIES *********/
+
+
+@media(max-width:500px) {
+    .header-title, .header-text{ 
+        margin-right:0;
+        color:var(--light-black);
+        text-align:center;
+    }
+
+    .header-title{
+        font-size:30pt;
+        margin-top:120px;
+    } 
+
+    .header-text {
+        font-size:20pt;
+    } 
+    
+    .header-arrow {
+        margin-right:50px;
+        margin-top:30px;
+    }
+
+    .q-bg-gray {
+        background-color: var(--q-bg-gray);
+    } 
+
+    .middle-form {
+        margin-top:250px;
+    } 
+
+    .middle-title {
+        font-size:22pt;
+    }  
+
+    .middle-input, .btn-search {
+        height:40px;
+    } 
+
+    .btn-search {
+        font-size:13pt;
+    } 
+
+    .video-text {
+        font-size:22pt;
+    } 
+
+    .btn-see-all {
+        margin-top: 30px;
+    }
+    
+    .partners-title {
+        font-size:40pt;
+        
+    } 
+
+    .partners-text {
+        font-size:20pt;
+    }
+
+    .partners-title, .partners-text {
+        text-align:center;
+    } 
+
+    .footer-middle-section {
+        margin-left:-45px!important;
+    } 
+
+    ul a.footer-list-link li {
+        padding-left:30px;
+    } 
+    
+    .footer-home, .footer-info, .footer-link, .footer-list-link {
+        font-size:15pt;
+    }
+
+    .footer-home {
+        margin-top:-20px!important;
+    } 
+
+    .footer-logo {
+        margin-bottom:50px;
+    }
+
+    .footer-copyright {
+        font-size:12pt;
+    } 
+    
+    #header-title-team {
+        font-size:90px;
+         margin-top:50%;
+         
+     }
+     
+     #header-title-text {
+         font-size:50px;
+     
+     } 
+
+     
+    #header-title-team, #header-title-text {
+        color:var(--white)!important;
+        margin-right: 0;
+    } 
+
+    .team-middle-title {
+        font-size:30px;   
+        margin-top:80px;
+    } 
+    
+    .team-middle-text {
+        font-size:15px;
+    } 
+
+    .tours-text-container {
+        margin-left:30px;
+    }
+    
+    .tours-title {
+        font-size:50px;
+    } 
+
+    .tours-text {
+        font-size:30px;
+    } 
+
+    #header-condor-title {
+        margin-right:0!important;
+    } 
+    
+   #header-condor-text {
+       font-size:18px;
+   } 
+
+   .tours-subtext {
+       font-size:12px;
+   } 
+
+   .tours-buy-button {
+       font-size:15px;
+   } 
+
+   .desc-main-title {
+       font-size: 40px;
+   } 
+
+   .desc-main-title-container {
+        margin-left:0;
+   } 
+
+   .desc-main-container {
+       margin-bottom: 50px;
+       margin-top:50px;
+       justify-content: center!important; 
+    } 
+    
+    .desc-main-stars {
+        margin-left:80px;
+    } 
+
+    .desc-text {
+        font-size:20px;
+        margin-top:10px!important;
+        margin-right:20px;
+    } 
+
+    .desc-activity-section {
+        margin-left:50px;
+    } 
+
+    .intineraries-title {
+        font-size:18px;
+    } 
+
+    .buy-button-container {
+        margin-top:20px;
+    } 
+
+    .buy-button {
+        font-size:18px;
+    } 
+
+    .buy-button-green {
+        padding: 20px 20px;
+    } 
+
+    .buy-button-red {
+        padding: 20px 40px;
+    }
+
+}
+
+
+@media (min-width:1400px) and (max-width:1700px) { 
+    .text-with-condor {
+        width:50%;
+    }
+} 
+
+@media (min-width:1800px){ 
+    .text-with-condor {
+        width:60%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1366px) {
+
+    .team-button {
+        margin-right:50px;
+    } 
+
+    .card {
+        margin-left:0;
+        width: 90%;
+    } 
+
+    .header-title {
+        font-size:45pt;
+    } 
+
+    .header-text {
+        font-size:20pt;
+    } 
+    
+    .partners-title {
+        font-size:60pt;
+        
+    } 
+
+    .partners-text {
+        font-size:40pt;
+    }
+
+    .partners-title, .partners-text {
+        text-align:center;
+    } 
+
+    .btn-see-all {
+        font-size: 30pt;
+        margin-bottom: 70px;
+    } 
+
+    
+    .contact-title {
+        margin-top:30px;
+        font-size:40pt!important;
+    } 
+
+    .contact-text {
+        font-size:18pt!important;
+    }
+
+    .contact-button{
+        margin-top:60px!important;
+    } 
+
+    .bg-contact {
+        padding:60px!important;
+    } 
+
+    .links-section img {
+        margin-left:-30px;
+    } 
+
+    .desc-text {
+        margin-right:20px;
+    }
+} 
+
+@media (min-width:768px) and (max-width:900px){ 
+    .nav-link {
+        font-size:30pt;
+    }
+
+    .bird-imgs {
+        margin-right:0!important;
+        margin-top:0!important;
+    } 
+
+    .birds-title {
+        font-size:35pt!important;
+    }  
+
+    .birds-text {
+        font-size: 15pt!important;
+    } 
+
+    .bird-card-title {
+        font-size:15pt!important;
+    }
+
+    .bird-card-text {
+        font-size:14pt;
+    }
+    
+    .star {
+        width:20px;
+
+    }
+
+    .stars {
+        margin-right:-30px;   
+    }
+    
+    .bird-card-button {
+        font-size:14pt;    
+        padding:5px;
+        margin-top:20px;
+        margin-left:20px;
+    } 
+    
+    .bird-card, .orchid-card {
+        margin-left:10px;
+    } 
+
+    .mountain-card, .butterfly-card {
+        margin-left:10px;
+    }
+
+    .bird-card, .mountain-card, .butterfly-card ,.orchid-card {
+        width:100%;
+    } 
+
+    #header-title-team {
+        font-size:120px!important;
+         
+     }
+     
+     #header-title-text {
+         font-size:50px;
+     }
+     
+     #header-title-team, #header-title-text {
+         margin-right:50px;
+     } 
+
+     .team-card-title {
+        font-size:25px;
+    }
+    
+    .team-card-text {
+        font-size:18px;
+    } 
+    
+    .team-card {
+        margin-left:10px;
+    } 
+
+    a.dropdown-item {
+        font-size:30px;
+    } 
+
+    .desc-icon-title, .desc-icon-text {
+        font-size:20px;
+    }
+
+    .right {
+        margin-left:-40px;
+    }
+} 
+
+@media (min-width:1024px) and (max-width:1500px){ 
+
+    .bird-imgs {
+        margin-right:0!important;
+        margin-top:0!important;
+    } 
+
+    .birds-title {
+        font-size:50pt;
+    }  
+
+    .birds-text {
+        font-size: 30pt;
+    } 
+
+    .bird-card-title {
+        font-size:18pt;
+    }
+
+    .bird-card-text {
+        font-size:14pt;
+    }
+    
+    .star {
+        width:25px;
+    }
+
+    .stars {
+        margin-left:30px;
+    } 
+ 
+    .bird-card-button {
+        font-size:14pt;    
+        padding:5px;
+        margin-top:20px;
+        margin-left:35px;
+    } 
+    
+    .bird-card, .mountain-card {
+        margin-left:20px;
+    } 
+
+    .loro-select, .orchid-select, .butterfly-select, .mountain-select {
+        width:70px;
+    } 
+
+
+    .contact-title {
+        margin-bottom: 70px;
+    }
+    
+    .contact-text {
+        font-size:20pt!important;
+        width: 95%;
+    }
+
+    .contact-title, .contact-text {
+        margin-left:60px;
+    } 
+
+    .contact-form {
+        margin-left:60px!important;
+    } 
+
+    .links-section img {
+        margin-left:0!important;
+    } 
+
+    .footer-section {
+        padding:50px;
+   } 
+}
+
+@media (max-width:900px) {
+    .navbar-brand {
+        margin-left: 0!important;
+        width: 150px;
+    }
+
+    .dropdown-menu.tours{
+        left:100px;
+        top:0;
+    } 
+
+    .header-form-card {
+        margin-left:0;
+        width:100%;
+        margin-top: 20px;
+    }
+     
+
+    li.nav-item:hover:not(.dropdown){
+        border-bottom: none;
+    }
+
+    .team-container {
+        margin-top:70px;
+    }
+    
+    .team-title {
+        font-size:25pt;
+        margin-top:50px;
+    } 
+
+    .team-subtitle {
+        font-size:20pt;
+        margin-top:20px;
+    } 
+
+    .team-text {
+        font-size:11pt;
+    }
+
+    .team-subtext {
+        font-size: 10pt;
+        width: 100%;
+    }
+
+    .team-button {
+        margin-right:0;
+        font-size:10pt;
+        margin-top:40px;
+    } 
+
+    .tours-section {
+        margin-top:80px;
+    }
+    
+    .birds-title {
+        font-size:35pt;
+    } 
+
+    .birds-text {
+        font-size: 15pt;
+    }
+
+    .bird-imgs {
+        margin-right:0!important;
+        margin-top:30px;
+    } 
+    
+    .bird-card {
+        margin-bottom:50px;     
+    }
+
+    .bird-card-title {
+        font-size:18pt;
+    }
+
+    .bird-card-text {
+        font-size:14pt;
+    }
+    
+    .star {
+        width:25px;
+    }
+    
+    .bird-card-button {
+        font-size:11pt;    
+        padding:5px;
+    } 
+
+    .loro-select, .orchid-select, .butterfly-select, .mountain-select {
+        width:50px;
+    } 
+
+    .bg-contact {
+        padding:0;
+    }
+    
+    .contact-title {
+       font-size:30pt;
+       margin-top:30px;
+    }
+
+    .contact-text {
+        font-size:12pt;
+        width: 90%;
+    }
+
+    .contact-title, .contact-text {
+        margin-left:20px;
+    } 
+
+    .contact-form input, .contact-form textarea {
+        margin-left:20px;
+    } 
+
+    .contact-button {
+        font-size:15pt;
+        margin-top:10px;
+        margin-bottom: 30px;
+        margin-right:-15px!important;
+    } 
+
+
+    .links-text {
+        margin-right:-5px!important;
+    } 
+
+    .links-container {
+        margin-left:40px;
+    }
+
+    .links-section img {
+        padding:20px;
+        margin-right:0!important;
+    } 
+
+    .note-section-text {
+        font-size: 20px;
+        width: 100%;
+        margin-left:30px;
+        line-height: 200%;
+        margin-bottom: 50px;
+    }
+     
+} 
+ 
+
+/*******QUERIES*********/ 
